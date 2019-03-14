@@ -14,3 +14,5 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+$router->get('/user/login','User\IndexController@login');//用户登录
+$router->get('/user/center','User\IndexController@userCenter');//用户中心
