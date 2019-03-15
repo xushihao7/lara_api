@@ -16,3 +16,4 @@ $router->get('/', function () use ($router) {
 });
 $router->get('/user/login','User\IndexController@login');//用户登录
 $router->get('/user/center','User\IndexController@userCenter');//用户中心
+$router->get('/user/order','User\IndexController@order');
